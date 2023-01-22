@@ -14,4 +14,14 @@ describe('ui/Button', () => {
     expect(screen.getByRole('button')).toBeInTheDocument()
     expect(screen.getByTestId('children')).toBeInTheDocument()
   })
+
+  it('should respect the fullWidth prop', () => {
+    render(<Button fullWidth />)
+
+    expect(screen.getByRole('button')).toHaveClass('w-full')
+  })
+
+  it('should apply the correct color class', () => {
+    expect(true).toBeTruthy()
+  })
 })

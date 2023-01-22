@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button-accent-primary {
+  --accent-color: blue;
+}
+
+.button-accent-secondary {
+  --accent-color: gray;
+}
+
+.button-accent-error {
+  --accent-color: red;
+}
