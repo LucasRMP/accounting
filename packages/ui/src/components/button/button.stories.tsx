@@ -8,9 +8,15 @@ export default {
   component: Button,
   argTypes: {
     children: {
-      name: 'Text',
       type: { name: 'string', required: true },
       defaultValue: 'Button',
+      description: 'The text to display inside the button',
+    },
+    fullWidth: {
+      type: { name: 'boolean', required: false },
+      defaultValue: false,
+      description:
+        'Whether the button should take up the full width of its container',
     },
   },
 } as ComponentMeta<typeof Button>

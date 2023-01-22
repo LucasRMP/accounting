@@ -1,3 +1,5 @@
+import centered from '@storybook/addon-centered/react'
+
 import { Layout } from './layout'
 
 /** @type {import('@storybook/react').Parameters} */
@@ -9,12 +11,13 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  layout: 'centered',
-  decorators: [
-    Story => (
-      <Layout>
-        <Story />
-      </Layout>
-    ),
-  ],
+  decorators: [centered],
 }
+
+export const decorators = [
+  Story => (
+    <Layout>
+      <Story />
+    </Layout>
+  ),
+]
