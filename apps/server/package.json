@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "predev": "rm -rf dist && yarn build",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "build": "tsc",
+    "lint": "eslint src --fix",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.18",
+    "eslint": "^8.32.0",
+    "eslint-config-custom": "*",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "jest-config": "*"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
