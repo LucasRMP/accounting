@@ -13,3 +13,7 @@
 .button-accent-error {
   --accent-color: red;
 }
+
+.text-lh-100 {
+  line-height: 100%;
+}

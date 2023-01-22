@@ -7,7 +7,10 @@ module.exports = {
     '@testing-library/jest-dom',
     '@testing-library/jest-dom/extend-expect',
   ],
-  collectCoverageFrom: ['**/src/**/*.{js,ts,jsx,tsx}'],
+  collectCoverageFrom: [
+    '**/src/**/*.{js,ts,jsx,tsx}',
+    '!**/src/**/*.stories.{js,ts,jsx,tsx}',
+  ],
   moduleFileExtensions: ['js', 'jsx', 'json', 'ts', 'tsx'],
   transform: {
     '^.+\\.tsx?$': 'esbuild-jest',
