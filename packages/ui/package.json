@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.ts*\"",
-    "test": "echo \"Error: no test specified\""
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "@types/react": "^17.0.37",
