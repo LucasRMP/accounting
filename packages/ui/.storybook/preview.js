@@ -14,6 +14,10 @@ export const parameters = {
   decorators: [centered],
 }
 
+export const globalTypes = {
+  darkMode: true,
+}
+
 export const decorators = [
   Story => (
     <Layout>
