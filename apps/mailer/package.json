@@ -1,8 +1,6 @@
 {
   "name": "mailer",
   "version": "0.0.0",
-  "private": true,
-  "main": "src",
   "scripts": {
     "dev": "next dev --port 3000",
     "build": "next build",
@@ -14,7 +12,6 @@
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "server": "*",
     "ui": "*"
   },
   "devDependencies": {
@@ -29,5 +26,8 @@
     "tailwindcss": "^3.2.4",
     "tsconfig": "*",
     "typescript": "4.9.4"
-  }
+  },
+  "files": [
+    "src"
+  ]
 }

@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { HelloWorld } from '../components/hello-world'
 
 const Home = () => (
   <div className="flex flex-col items-center justify-center min-h-screen py-2">
